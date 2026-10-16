@@ -1,0 +1,17 @@
+name: Test print script
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: download the repo
+        uses: actions/checkout@v4
+
+      - name: Run Print Script
+        run: |
+          python print.py
+      
+      
